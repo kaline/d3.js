@@ -1,0 +1,17 @@
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<link  rel="stylesheet" href="index.css"></link>
+
+<!--  html-->
+<p class="d3_fruit"></p>
+
+<script>
+
+
+let fruits = ['Apple', 'Orange', 'Mango']
+
+d3.selectAll(".d3_fruit").selectAll("p").data(fruits).join("p").text((d) => d)
+console.log(fruits)
+
+
+</script>
+
